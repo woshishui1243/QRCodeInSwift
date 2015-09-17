@@ -15,9 +15,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         let qrcodeScanner = QRCode();
-        qrcodeScanner.startScan(self.view, previewFrame: self.view.bounds, boarderColor: UIColor.greenColor(), boarderWidth: 2.0) { (qrcode) -> () in
-            println(qrcode);
-        }
+        qrcodeScanner.sayHello();
+//        qrcodeScanner.startScan(self.view, previewFrame: self.view.bounds, boarderColor: UIColor.greenColor(), boarderWidth: 2.0) { (qrcode) -> () in
+//            println(qrcode);
+//        }
     }
 
     override func didReceiveMemoryWarning() {
